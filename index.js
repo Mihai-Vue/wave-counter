@@ -23,4 +23,5 @@ function resetCounter() {
     sumEntries.textContent = 0
     count = 0
     saveEl.textContent = ""
+    countEl.textContent = count
 }
