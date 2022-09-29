@@ -10,12 +10,14 @@ function increment() {
 }
 
 function save() {
+    if(count !== 0) {
     let countStr = count + " - "
     saveEl.textContent += countStr
     totalEntries += count
     sumEntries.textContent = totalEntries
     count=0
     countEl.textContent = count
+    }
 }
 
 function resetCounter() {
